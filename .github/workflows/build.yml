@@ -26,15 +26,13 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Make Gradle wrapper executable
-        run: chmod +x gradlew || gradle wrapper
-        working-directory: Aurora_fixed
+        run: chmod +x gradlew
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug
-        working-directory: Aurora_fixed
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
-          path: Aurora_fixed/app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/apk/debug/app-debug.apk
