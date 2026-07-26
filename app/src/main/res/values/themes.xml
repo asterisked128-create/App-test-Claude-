@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Placeholder platform theme. Will be replaced once core:designsystem
+         defines the real Material 3 + custom token theme. -->
+    <style name="Theme.Aurora" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
